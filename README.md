@@ -1,6 +1,6 @@
 # ButtonWithASideIcon
 
-An easy and conveineit way to do buttons with side icons
+An easy and convenient way to do buttons with side icons
 
 ## This is a Swift 5 version
 
