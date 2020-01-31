@@ -4,6 +4,7 @@
 //  Created by Badi3
 //
 
+
 import UIKit
 
 @IBDesignable
@@ -41,26 +42,38 @@ public final class ButtonWithASideIcon: UIControl {
     
     fileprivate let label: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(
-            ofSize: 13.0,
-            weight: UIFont.Weight.medium
-        )
+        label.font = label.font.withSize(13)
+        
         label.textAlignment = .center
         label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
         label.adjustsFontSizeToFitWidth = true
-        
+        label.setContentCompressionResistancePriority(UILayoutPriority(rawValue: 1000), for: .horizontal)
+        label.setContentHuggingPriority(UILayoutPriority(rawValue: 1000), for: .horizontal)
         return label
     }()
     
     fileprivate lazy var stackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [self.imageView, self.label])
+        
+        let redAlertLeftSpace = UIView.init()
+        redAlertLeftSpace.translatesAutoresizingMaskIntoConstraints = false
+        
+        let redAlertRightSpace = UIView.init()
+        redAlertRightSpace.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+       
+        
+        
+        
+        let stackView = UIStackView(arrangedSubviews: [redAlertLeftSpace, self.imageView, self.label, redAlertRightSpace])
         stackView.spacing = 5
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.isUserInteractionEnabled = false
         stackView.axis = .horizontal
         stackView.alignment = .center
         
+        redAlertRightSpace.widthAnchor.constraint(equalTo: redAlertLeftSpace.widthAnchor, multiplier: 1, constant: 0).isActive = true
         return stackView
     }()
     
@@ -87,8 +100,8 @@ public final class ButtonWithASideIcon: UIControl {
             self.centerXAnchor.constraint(equalTo: stackView.centerXAnchor),
             stackView.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
             stackView.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor),
-//            stackView.leadingAnchor.constraint(greaterThanOrEqualTo: self.leadingAnchor, constant: 5),
-//            stackView.trailingAnchor.constraint(greaterThanOrEqualTo: self.trailingAnchor, constant: 5),
+            stackView.leadingAnchor.constraint(greaterThanOrEqualTo: self.leadingAnchor, constant: 5),
+            stackView.trailingAnchor.constraint(greaterThanOrEqualTo: self.trailingAnchor, constant: 5),
             imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: 1)
         ])
     }
@@ -126,7 +139,7 @@ public extension ButtonWithASideIcon {
     }
     
     @IBInspectable
-    var borderWidth: CGFloat {
+    override var borderWidth: CGFloat {
         get {
             return layer.borderWidth
         }
