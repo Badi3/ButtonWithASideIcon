@@ -10,7 +10,7 @@ import UIKit
 @IBDesignable
 public final class ButtonWithASideIcon: UIControl {
     @IBInspectable
-    public var pressedBackgroundColor: UIColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+    public var pressedBackgroundColor: UIColor = UIColor.red
     
     @IBInspectable
     public var titleAndIconColor: UIColor = UIColor.black {
@@ -28,7 +28,7 @@ public final class ButtonWithASideIcon: UIControl {
     }
     
     @IBInspectable
-    public var unpressedBackgroundColor: UIColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1) {
+    public var unpressedBackgroundColor: UIColor = UIColor.red.withAlphaComponent(0.3) {
         didSet {
             backgroundColor = unpressedBackgroundColor
         }
@@ -134,12 +134,12 @@ public extension ButtonWithASideIcon {
             return label.font.pointSize
         }
         set {
-            label.font = UIFont.systemFont(ofSize: newValue, weight: UIFont.Weight.heavy)
+            label.font = label.font.withSize(newValue)
         }
     }
     
     @IBInspectable
-    override var borderWidth: CGFloat {
+    var borderWidth: CGFloat {
         get {
             return layer.borderWidth
         }

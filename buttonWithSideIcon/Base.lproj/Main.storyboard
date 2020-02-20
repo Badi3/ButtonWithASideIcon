@@ -15,77 +15,109 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XWY-Ne-Gwf">
-                                <rect key="frame" x="48" y="354.5" width="318" height="197"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14y-6k-SuF" customClass="ButtonWithASideIcon" customModule="buttonWithSideIcon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="318" height="59"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="318" id="0Xi-Ra-zIj"/>
-                                            <constraint firstAttribute="height" constant="59" id="VCr-0P-n1r"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.94117647059999998" green="0.58039215690000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="4"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="text" value="Title"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
-                                                <real key="value" value="25"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="square.and.arrow.up.fill" catalog="system"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2py-TJ-N1Y" customClass="ButtonWithASideIcon" customModule="buttonWithSideIcon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="69" width="318" height="59"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.94117647059999998" green="0.58039215690000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="unpressedBackgroundColor">
-                                                <color key="value" red="0.76862745099999996" green="0.63529411759999999" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="text" value="Title"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
-                                                <real key="value" value="25"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="pencil.circle.fill" catalog="system"/>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="titleAndIconColor">
-                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="imagePadding">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdK-As-gTt" customClass="ButtonWithASideIcon" customModule="buttonWithSideIcon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="138" width="318" height="59"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="text" value="Title"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
-                                                <real key="value" value="25"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="square.and.arrow.up.fill" catalog="system"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                </subviews>
-                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14y-6k-SuF" customClass="ButtonWithASideIcon" customModule="buttonWithSideIcon" customModuleProvider="target">
+                                <rect key="frame" x="107" y="373" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0Xi-Ra-zIj"/>
+                                    <constraint firstAttribute="height" constant="40" id="VCr-0P-n1r"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Whatsapp"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleAndIconColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pressedBackgroundColor">
+                                        <color key="value" red="0.25490196079999999" green="0.070588235289999995" blue="0.42352941179999998" alpha="0.77153939260563376" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="unpressedBackgroundColor">
+                                        <color key="value" red="0.25490196079999999" green="0.070588235289999995" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="message.fill" catalog="system"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2py-TJ-N1Y" customClass="ButtonWithASideIcon" customModule="buttonWithSideIcon" customModuleProvider="target">
+                                <rect key="frame" x="107" y="433" width="200" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.25490196079999999" green="0.070588235289999995" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="unpressedBackgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Messenger"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleAndIconColor">
+                                        <color key="value" red="0.25490196079999999" green="0.070588235289999995" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imagePadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="message" catalog="system"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pressedBackgroundColor">
+                                        <color key="value" red="0.25490196079999999" green="0.070588235289999995" blue="0.42352941179999998" alpha="0.14700704225352113" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cdK-As-gTt" customClass="ButtonWithASideIcon" customModule="buttonWithSideIcon" customModuleProvider="target">
+                                <rect key="frame" x="107" y="493" width="200" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.25490196079999999" green="0.070588235289999995" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Badi3"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="person.fill" catalog="system"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="unpressedBackgroundColor">
+                                        <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleAndIconColor">
+                                        <color key="value" red="0.25490196079999999" green="0.070588235289999995" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pressedBackgroundColor">
+                                        <color key="value" white="0.86770286190677692" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intrinsic Sizing 👆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udo-tR-Wh3">
+                                <rect key="frame" x="137.5" y="541" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="XWY-Ne-Gwf" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="6re-u9-q3R"/>
-                            <constraint firstItem="XWY-Ne-Gwf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DEJ-aK-Vme"/>
+                            <constraint firstItem="14y-6k-SuF" firstAttribute="centerX" secondItem="2py-TJ-N1Y" secondAttribute="centerX" id="4UC-s7-9Qd"/>
+                            <constraint firstItem="2py-TJ-N1Y" firstAttribute="top" secondItem="14y-6k-SuF" secondAttribute="bottom" constant="20" id="LP5-jS-rhg"/>
+                            <constraint firstItem="cdK-As-gTt" firstAttribute="height" secondItem="14y-6k-SuF" secondAttribute="height" id="MQ7-2R-9VK"/>
+                            <constraint firstItem="udo-tR-Wh3" firstAttribute="centerX" secondItem="cdK-As-gTt" secondAttribute="centerX" id="ZX6-fp-nUa"/>
+                            <constraint firstItem="udo-tR-Wh3" firstAttribute="top" secondItem="cdK-As-gTt" secondAttribute="bottom" constant="8" id="dtI-Vl-gdp"/>
+                            <constraint firstItem="2py-TJ-N1Y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pJD-cU-rAp"/>
+                            <constraint firstItem="cdK-As-gTt" firstAttribute="top" secondItem="2py-TJ-N1Y" secondAttribute="bottom" constant="20" id="pxE-Rq-Muh"/>
+                            <constraint firstItem="cdK-As-gTt" firstAttribute="centerX" secondItem="2py-TJ-N1Y" secondAttribute="centerX" id="qLD-lr-TCT"/>
+                            <constraint firstItem="2py-TJ-N1Y" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="rSz-QM-qgb"/>
+                            <constraint firstItem="2py-TJ-N1Y" firstAttribute="height" secondItem="14y-6k-SuF" secondAttribute="height" id="toF-UC-z2V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -96,7 +128,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pencil.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="square.and.arrow.up.fill" catalog="system" width="56" height="64"/>
+        <image name="message" catalog="system" width="64" height="56"/>
+        <image name="message.fill" catalog="system" width="64" height="56"/>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>
