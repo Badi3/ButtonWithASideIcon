@@ -1,4 +1,4 @@
-# ButtonWithASideIcon
+# Button With A Side Icon
 
 An easy and convenient way to do buttons with side icons
 
