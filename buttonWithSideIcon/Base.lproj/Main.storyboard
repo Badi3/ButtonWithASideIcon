@@ -105,10 +105,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSe-M7-xiU">
+                                <rect key="frame" x="10" y="54" width="42" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="14y-6k-SuF" firstAttribute="centerX" secondItem="2py-TJ-N1Y" secondAttribute="centerX" id="4UC-s7-9Qd"/>
+                            <constraint firstItem="oSe-M7-xiU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="EwW-XB-pss"/>
+                            <constraint firstItem="oSe-M7-xiU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="G1L-tM-6wK"/>
                             <constraint firstItem="2py-TJ-N1Y" firstAttribute="top" secondItem="14y-6k-SuF" secondAttribute="bottom" constant="20" id="LP5-jS-rhg"/>
                             <constraint firstItem="cdK-As-gTt" firstAttribute="height" secondItem="14y-6k-SuF" secondAttribute="height" id="MQ7-2R-9VK"/>
                             <constraint firstItem="udo-tR-Wh3" firstAttribute="centerX" secondItem="cdK-As-gTt" secondAttribute="centerX" id="ZX6-fp-nUa"/>

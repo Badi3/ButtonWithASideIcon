@@ -9,6 +9,15 @@ import UIKit
 
 @IBDesignable
 public final class ButtonWithASideIcon: UIControl {
+    
+    override public func prepareForInterfaceBuilder() {
+        invalidateIntrinsicContentSize()
+    }
+    
+    public override var intrinsicContentSize: CGSize{
+        return stackView.intrinsicContentSize
+    }
+    
     @IBInspectable
     public var pressedBackgroundColor: UIColor = UIColor.red
     
